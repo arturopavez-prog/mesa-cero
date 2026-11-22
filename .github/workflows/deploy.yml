@@ -1,36 +1,27 @@
 name: Publicar MESA CERO en GitHub Pages
 
+# GitHub Pages publica desde la rama gh-pages.
+# Cada push a main copia el contenido a gh-pages y Pages se actualiza solo.
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  sync:
     runs-on: ubuntu-latest
     steps:
       - name: Obtener archivos
         uses: actions/checkout@v4
-      - name: Configurar Pages
-        uses: actions/configure-pages@v5
         with:
-          enablement: true
-      - name: Empaquetar sitio
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - name: Publicar
-        id: deployment
-        uses: actions/deploy-pages@v4
+          fetch-depth: 0
+      - name: Copiar main a gh-pages
+        run: git push --force origin HEAD:gh-pages
