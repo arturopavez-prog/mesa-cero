@@ -1,0 +1,40 @@
+CLAUDE — PUBLICA MESA CERO SIN TOCAR SPINNING
+============================================
+
+Te adjunto MESA_CERO_2_1_LISTO_GITHUB.zip.
+
+OBJETIVO:
+Publicar la app MESA CERO 2.1 como un sitio independiente en GitHub Pages,
+para instalarla como PWA en mi Android igual que mi app Spinning.
+
+ORDENES:
+1. Descomprime el ZIP. Revisa README.md.
+2. Crea un repositorio NUEVO llamado mesa-cero; no edites ni reutilices el
+   repositorio, dominio, carpeta o configuración del proyecto Spinning.
+3. Sube todos los archivos y carpetas del ZIP a la RAÍZ del repo (no la carpeta
+   contenedora ni el ZIP solo). Incluye los archivos ocultos .nojekyll y .github.
+4. Rama principal: main.
+5. En Settings > Pages establece Source = GitHub Actions.
+6. Ejecuta/verifica el workflow deploy.yml hasta obtener el enlace HTTPS real.
+7. Abre el sitio y prueba lo siguiente antes de dar la tarea por terminada:
+   - aparece el tablero con 4 misiones, 12 clases y botón Continuar;
+   - entra la clase 1 y conserva avance al recargar;
+   - se puede exportar el respaldo JSON;
+   - desde Android Chrome ofrece Instalar aplicación o Añadir a inicio;
+   - abre desde el ícono M0 como aplicación autónoma;
+   - al apagar internet luego de haberla cargado sigue mostrando la academia;
+   - comprueba que Spinning continúa funcionando exactamente igual.
+8. Devuélveme el enlace HTTPS final y un instructivo muy corto para instalar.
+
+REGLAS NO NEGOCIABLES:
+- PRIMERO ENSEÑAR, después práctica guiada SIN NOTA, después evaluar.
+- 80% para aprobar examen y desbloquear el caso final de cada misión.
+- No introducir login, pagos, backend, API key ni servicios externos.
+- No inventar corrección automática de las respuestas abiertas.
+- Mantener el contenido y el guardado de progreso local.
+- No reemplazar index.html por una página vacía ni rediseñar el curso.
+- Si encuentras un error, corrígelo en este nuevo repositorio y documenta la corrección.
+- No reportes 'publicado' hasta comprobar que la dirección HTTPS funciona.
+
+NOTA: Los archivos de historial son respaldo: no son el sitio principal.
+El único punto de entrada es index.html.

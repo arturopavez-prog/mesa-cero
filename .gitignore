@@ -1,0 +1,7 @@
+# Archivos locales o temporales (no subir)
+.DS_Store
+Thumbs.db
+__pycache__/
+*.log
+*.bak
+node_modules/
