@@ -28,3 +28,6 @@ Responder una clase, avanzar la práctica, responder el examen, entregar el caso
 
 ## Pruebas automáticas realizadas (Chrome headless, viewport Android 412×915)
 Tablero con 4 misiones/12 clases/Continuar · clase 1 no avanza con respuesta incorrecta y sí con la correcta · examen bloqueado antes de la práctica · progreso persiste al recargar · respaldo JSON y bitácora TXT descargan · racha y semana calculan bien con historial simulado · repaso no altera avance · .ics semanal con alarma · service worker activo · recarga sin conexión muestra la academia · manifest standalone con 2 íconos.
+
+## Corrección de publicación (repo mesa-cero)
+- `deploy.yml`: se agregó `enablement: true` a `actions/configure-pages` para intentar activar GitHub Pages automáticamente si aún no está activado.
